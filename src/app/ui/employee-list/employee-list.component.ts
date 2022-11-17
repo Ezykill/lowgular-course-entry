@@ -9,8 +9,9 @@ import {HttpClient} from "@angular/common/http";
 //import * as url from "url";
 
 @Component({
-  selector: 'employee-list',
+  selector: 'employee-list-igor',
   templateUrl: './employee-list.component.html',
+  //template: '<h1>Inaczej HTML</h1>',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
