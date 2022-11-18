@@ -3,13 +3,17 @@
 </head>
 
 <body>
+<div class="container">
 <div class="jumbotron">
   <h1 class="display-2">My first app!</h1>
   <h2 class="display-4">{{ title }}</h2>
 </div>
 
 <ul  class="list-group" *ngIf="data$ | async as data; else empty">
-  <li class="list-group-item" *ngFor="let employee of data">{{ employee.id }}:  {{ employee.name }}:  {{ employee.email }}</li>
+  <li class="list-group-item" *ngFor="let employee of data">{{ employee.id }}:  {{ employee.name }}</li>
 </ul>
 
 <ng-template #empty> There is no data </ng-template>
+
+</div>
+</body>
