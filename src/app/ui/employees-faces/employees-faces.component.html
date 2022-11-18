@@ -11,7 +11,7 @@
 
 <div  style="display: inline; text-align: center" *ngFor="let employee of data$ | async">
   <figure style="display: inline-block;">
-  <img style="width:200px; margin: 10px" [src]="employee.image">
+  <img style="width:200px; margin: 10px" [src]="employee.img">
   <figcaption class="display-6">{{employee.name}}</figcaption>
   </figure>
 </div>

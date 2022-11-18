@@ -10,7 +10,7 @@
 </div>
 
 <ul  class="list-group" *ngIf="data$ | async as data; else empty">
-  <li class="list-group-item" *ngFor="let employee of data">{{ employee.id }}:  {{ employee.name }}</li>
+  <li class="list-group-item" *ngFor="let employee of data">{{ employee.personalNumber }}:  {{ employee.name }}</li>
 </ul>
 
 <ng-template #empty> There is no data </ng-template>
