@@ -10,6 +10,7 @@ import { CreateEmployeeModel } from '../../model/create-employee.model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeFormComponent {
+  alert:boolean=false
   readonly employeeForm: FormGroup = new FormGroup({
     name: new FormControl(null, [Validators.required]),
     age: new FormControl(null, [Validators.min(18), Validators.required]),
@@ -20,6 +21,6 @@ export class EmployeeFormComponent {
   }
 
   onFormSubmitted(form: CreateEmployeeModel): void {
-    this._employeeService.create(form).subscribe();
+    this._employeeService.create(form).subscribe()
   }
 }
