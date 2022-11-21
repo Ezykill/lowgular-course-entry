@@ -8046,3 +8046,2065 @@
 	"level": "error",
 	"message": "[API]: Error Entity not found for suffix: component-module"
 }
+[info] [API] Request for flow/create-entity: {
+	"action": "flow/create-entity",
+	"params": {},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "qGtvxEmfNE",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for flow/create-entity"
+}
+[info] [CLI] Calling Query flow/create-entity: {
+	"funcParams": {},
+	"level": "info",
+	"message": "[CLI] Calling Query flow/create-entity"
+}
+[info] [CLI] Called Query flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query flow/create-entity"
+}
+[info] [API] Response ok: flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: flow/create-entity"
+}
+[info] [API] Request for flow/create-entity: {
+	"action": "flow/create-entity",
+	"params": {},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "z0qpBJqVsi",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for flow/create-entity"
+}
+[info] [CLI] Calling Query flow/create-entity: {
+	"funcParams": {},
+	"level": "info",
+	"message": "[CLI] Calling Query flow/create-entity"
+}
+[info] [CLI] Called Query flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query flow/create-entity"
+}
+[info] [API] Response ok: flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: flow/create-entity"
+}
+[info] [API] Request for flow/create-entity: {
+	"action": "flow/create-entity",
+	"params": {},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "EUrMYXd2cs",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for flow/create-entity"
+}
+[info] [CLI] Calling Query flow/create-entity: {
+	"funcParams": {},
+	"level": "info",
+	"message": "[CLI] Calling Query flow/create-entity"
+}
+[info] [CLI] Called Query flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query flow/create-entity"
+}
+[info] [API] Response ok: flow/create-entity: {
+	"result": {
+		"context": {
+			"project": {
+				"name": "lowgular-course-entry",
+				"workspaceRoot": "F:/lowgular-course-entry",
+				"root": "",
+				"sourceRoot": "src",
+				"prefix": "app",
+				"codePathFromWorkspaceRoot": "src/app",
+				"absoluteCodePath": "F:/lowgular-course-entry/src/app",
+				"absoluteRootPath": "F:/lowgular-course-entry",
+				"rootRoutingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+				"type": "App"
+			}
+		},
+		"steps": [
+			{
+				"contextId": "entity",
+				"title": "What do you want to create?",
+				"type": "multi-option",
+				"options": {
+					"App": [
+						{
+							"id": "component",
+							"suffix": "Component",
+							"folder": "ui/$name$",
+							"type": "ANGULAR_COMPONENT",
+							"insideOf": "App",
+							"config": {
+								"stylesExtension": "none",
+								"viewEncapsulation": "Emulated",
+								"selector": "generated",
+								"changeDetectionStrategy": "OnPush"
+							}
+						},
+						{
+							"id": "dataService",
+							"suffix": "Service",
+							"folder": "services",
+							"type": "ANGULAR_SERVICE",
+							"insideOf": "App"
+						},
+						{
+							"id": "model",
+							"suffix": "Model",
+							"folder": "model",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						},
+						{
+							"id": "response",
+							"suffix": "Response",
+							"folder": "services",
+							"type": "DATA_STRUCTURE",
+							"insideOf": "App"
+						}
+					],
+					"Lib": []
+				},
+				"param": "project.type",
+				"property": "id"
+			},
+			{
+				"contextId": "name",
+				"title": "What is the $entity.id$ name?",
+				"subtitle": "e.g. user",
+				"type": "text-input"
+			},
+			{
+				"conditions": [
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "DATA_STRUCTURE"
+					},
+					{
+						"left": "entity.type",
+						"operator": "eq",
+						"right": "OBJECT"
+					}
+				],
+				"contextId": "properties",
+				"title": "What are the $entity.id$ properties?",
+				"subtitle": "Optional: Can be empty... or use csv format e.g. id:number,text:string",
+				"type": "multi-input"
+			}
+		],
+		"request": {
+			"scope": "entity.type",
+			"config": {
+				"LIBRARY": {
+					"url": "library/create",
+					"payload": {
+						"name": "name.value"
+					}
+				},
+				"OBJECT": {
+					"url": "object/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"DATA_STRUCTURE": {
+					"url": "data-structure/create",
+					"payload": {
+						"name": "name.value",
+						"properties": "properties",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_COMPONENT": {
+					"url": "angular-component/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_DIRECTIVE": {
+					"url": "angular-directive/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_GUARD": {
+					"url": "angular-guard/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_RESOLVER": {
+					"url": "angular-resolver/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ANGULAR_SERVICE": {
+					"url": "angular-service/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				},
+				"ABSTRACTION": {
+					"url": "abstraction/create",
+					"payload": {
+						"name": "name.value",
+						"entityId": "entity.id"
+					}
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: flow/create-entity"
+}
+[info] [API] Request for angular-component/create: {
+	"action": "angular-component/create",
+	"params": {
+		"name": "userForm",
+		"entityId": "component"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "EUrMYXd2cs",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/create"
+}
+[info] [CLI] Calling Command angular-component/create: {
+	"funcParams": {
+		"name": "userForm",
+		"entityId": "component"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command angular-component/create"
+}
+[info] [CommandBus]: Dispatching command COMPONENT_CREATE_SMART_COMPONENT: {
+	"commandName": "COMPONENT_CREATE_SMART_COMPONENT",
+	"payload": {
+		"name": "userForm",
+		"prefix": "app",
+		"suffix": "Component",
+		"absoluteFolderPath": "F:/lowgular-course-entry/src/app/ui/user-form",
+		"config": {
+			"stylesExtension": "none",
+			"viewEncapsulation": "Emulated",
+			"selector": "generated",
+			"changeDetectionStrategy": "OnPush"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command COMPONENT_CREATE_SMART_COMPONENT"
+}
+[warn] [TsMorphFileAdapter]: File Not Found, creating...: {
+	"filePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+	"level": "warn",
+	"message": "[TsMorphFileAdapter]: File Not Found, creating..."
+}
+[info] [EventBus]: Broadcasting event COMPONENT_SMART_COMPONENT_CREATED: {
+	"type": "COMPONENT_SMART_COMPONENT_CREATED",
+	"payload": {
+		"createdFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event COMPONENT_SMART_COMPONENT_CREATED"
+}
+[info] [CommandBus]: Dispatching command CREATE_COMPONENT_MODULE: {
+	"commandName": "CREATE_COMPONENT_MODULE",
+	"payload": {
+		"moduleFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command CREATE_COMPONENT_MODULE"
+}
+[info] [EventBus]: Broadcasted COMPONENT_SMART_COMPONENT_CREATED: {
+	"event": {
+		"createdFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted COMPONENT_SMART_COMPONENT_CREATED"
+}
+[info] [EventBus]: Broadcasting event MODULE_MODULE_CREATED: {
+	"type": "MODULE_MODULE_CREATED",
+	"payload": {
+		"moduleFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event MODULE_MODULE_CREATED"
+}
+[info] [EventBus]: Broadcasted MODULE_MODULE_CREATED: {
+	"event": {
+		"moduleFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted MODULE_MODULE_CREATED"
+}
+[info] [CommandBus]: Handled  CREATE_COMPONENT_MODULE: {
+	"commandName": "CREATE_COMPONENT_MODULE",
+	"payload": {
+		"moduleFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  CREATE_COMPONENT_MODULE"
+}
+[info] [CommandBus]: Handled  COMPONENT_CREATE_SMART_COMPONENT: {
+	"commandName": "COMPONENT_CREATE_SMART_COMPONENT",
+	"payload": {
+		"name": "userForm",
+		"prefix": "app",
+		"suffix": "Component",
+		"absoluteFolderPath": "F:/lowgular-course-entry/src/app/ui/user-form",
+		"config": {
+			"stylesExtension": "none",
+			"viewEncapsulation": "Emulated",
+			"selector": "generated",
+			"changeDetectionStrategy": "OnPush"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  COMPONENT_CREATE_SMART_COMPONENT"
+}
+[info] [CLI] Called Command angular-component/create: {
+	"message": "[CLI] Called Command angular-component/create",
+	"level": "info"
+}
+[info] [API] Response ok: angular-component/create: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: angular-component/create"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"position": 307
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "5P1AaKlx2z",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"position": 307
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [API] Request for angular-component/form-properties/add: {
+	"action": "angular-component/form-properties/add",
+	"params": {
+		"propertyName": "userForm",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"fields": {
+			"email": "text",
+			"age": "text",
+			"salary": "text"
+		}
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "5P1AaKlx2z",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/form-properties/add"
+}
+[info] [CLI] Calling Command angular-component/form-properties/add: {
+	"funcParams": {
+		"propertyName": "userForm",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"fields": {
+			"email": "text",
+			"age": "text",
+			"salary": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command angular-component/form-properties/add"
+}
+[info] [CommandBus]: Dispatching command SMART_COMPONENT_ADD_FORM_PROPERTY: {
+	"commandName": "SMART_COMPONENT_ADD_FORM_PROPERTY",
+	"payload": {
+		"componentTsFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"propertyName": "userForm",
+		"fields": {
+			"email": "text",
+			"age": "text",
+			"salary": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command SMART_COMPONENT_ADD_FORM_PROPERTY"
+}
+[info] [EventBus]: Broadcasting event SMART_COMPONENT_FORM_ADDED: {
+	"type": "SMART_COMPONENT_FORM_ADDED",
+	"payload": {
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"componentName": "UserFormComponent"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event SMART_COMPONENT_FORM_ADDED"
+}
+[info] [EventBus]: Broadcasted SMART_COMPONENT_FORM_ADDED: {
+	"event": {
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"componentName": "UserFormComponent"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted SMART_COMPONENT_FORM_ADDED"
+}
+[info] [CommandBus]: Dispatching command MODULE_IMPORT_REACTIVE_FORM: {
+	"commandName": "MODULE_IMPORT_REACTIVE_FORM",
+	"payload": {
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"moduleName": "ReactiveFormsModule",
+		"declarationModules": [
+			{
+				"name": "UserFormComponentModule",
+				"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command MODULE_IMPORT_REACTIVE_FORM"
+}
+[info] [CommandBus]: Handled  MODULE_IMPORT_REACTIVE_FORM: {
+	"commandName": "MODULE_IMPORT_REACTIVE_FORM",
+	"payload": {
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"moduleName": "ReactiveFormsModule",
+		"declarationModules": [
+			{
+				"name": "UserFormComponentModule",
+				"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  MODULE_IMPORT_REACTIVE_FORM"
+}
+[info] [CommandBus]: Handled  SMART_COMPONENT_ADD_FORM_PROPERTY: {
+	"commandName": "SMART_COMPONENT_ADD_FORM_PROPERTY",
+	"payload": {
+		"componentTsFile": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"propertyName": "userForm",
+		"fields": {
+			"email": "text",
+			"age": "text",
+			"salary": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  SMART_COMPONENT_ADD_FORM_PROPERTY"
+}
+[info] [CLI] Called Command angular-component/form-properties/add: {
+	"message": "[CLI] Called Command angular-component/form-properties/add",
+	"level": "info"
+}
+[info] [API] Response ok: angular-component/form-properties/add: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: angular-component/form-properties/add"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ybyPOkIVMg",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "UserFormComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_COMPONENT",
+				"label": "Display Component",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "UserFormComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_COMPONENT",
+				"label": "Display Component",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for angular-component/list: {
+	"action": "angular-component/list",
+	"params": {
+		"componentHtmlFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ybyPOkIVMg",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/list"
+}
+[info] [CLI] Calling Query angular-component/list: {
+	"funcParams": {
+		"componentHtmlFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query angular-component/list"
+}
+[info] [CLI] Called Query angular-component/list: {
+	"result": [
+		{
+			"path": "F:/lowgular-course-entry/src/app/app.component.ts",
+			"selector": "app-root",
+			"name": "AppComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+			"selector": "app-employee-form",
+			"name": "EmployeeFormComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employee-list/employee-list.component.ts",
+			"selector": "employee-list-igor",
+			"name": "EmployeeListComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+			"selector": "app-employees-faces",
+			"name": "EmployeesFacesComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/project-list/project-list.component.ts",
+			"selector": "app-project-list",
+			"name": "ProjectListComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+			"selector": "app-user-form",
+			"name": "UserFormComponent"
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query angular-component/list"
+}
+[info] [API] Response ok: angular-component/list: {
+	"result": [
+		{
+			"path": "F:/lowgular-course-entry/src/app/app.component.ts",
+			"selector": "app-root",
+			"name": "AppComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+			"selector": "app-employee-form",
+			"name": "EmployeeFormComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employee-list/employee-list.component.ts",
+			"selector": "employee-list-igor",
+			"name": "EmployeeListComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/employees-faces/employees-faces.component.ts",
+			"selector": "app-employees-faces",
+			"name": "EmployeesFacesComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/project-list/project-list.component.ts",
+			"selector": "app-project-list",
+			"name": "ProjectListComponent"
+		},
+		{
+			"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+			"selector": "app-user-form",
+			"name": "UserFormComponent"
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: angular-component/list"
+}
+[info] [API] Request for component-modules/module-list: {
+	"action": "component-modules/module-list",
+	"params": {
+		"componentHtmlPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ybyPOkIVMg",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for component-modules/module-list"
+}
+[info] [CLI] Calling Query component-modules/module-list: {
+	"funcParams": {
+		"componentHtmlPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query component-modules/module-list"
+}
+[info] [CLI] Called Query component-modules/module-list: {
+	"result": {
+		"name": "UserFormComponent",
+		"modules": [
+			{
+				"name": "UserFormComponentModule",
+				"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query component-modules/module-list"
+}
+[info] [API] Response ok: component-modules/module-list: {
+	"result": {
+		"name": "UserFormComponent",
+		"modules": [
+			{
+				"name": "UserFormComponentModule",
+				"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: component-modules/module-list"
+}
+[info] [API] Request for component-modules/dependency-module-list: {
+	"action": "component-modules/dependency-module-list",
+	"params": {
+		"componentPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ybyPOkIVMg",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for component-modules/dependency-module-list"
+}
+[info] [CLI] Calling Query component-modules/dependency-module-list: {
+	"funcParams": {
+		"componentPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query component-modules/dependency-module-list"
+}
+[info] [CLI] Called Query component-modules/dependency-module-list: {
+	"result": [
+		{
+			"name": "UserFormComponent",
+			"modules": [
+				{
+					"name": "UserFormComponentModule",
+					"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+				}
+			]
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query component-modules/dependency-module-list"
+}
+[info] [API] Response ok: component-modules/dependency-module-list: {
+	"result": [
+		{
+			"name": "UserFormComponent",
+			"modules": [
+				{
+					"name": "UserFormComponentModule",
+					"path": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+				}
+			]
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: component-modules/dependency-module-list"
+}
+[info] [API] Request for component-modules/import-component: {
+	"action": "component-modules/import-component",
+	"params": {
+		"modulePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts",
+		"moduleToImportPaths": [
+			"F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+		]
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ybyPOkIVMg",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for component-modules/import-component"
+}
+[error] [API]: Error Attempted to get information from a node that was removed or forgotten.
+
+Node text: @NgModule({
+  imports: [ReactiveFormsModule],
+  declarations: [UserFormComponent],
+  providers: [],
+...: {
+	"loggerData": {
+		"action": "component-modules/import-component",
+		"params": {
+			"modulePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts",
+			"moduleToImportPaths": [
+				"F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+			]
+		},
+		"context": {
+			"workspace": {
+				"rootPath": "F:/lowgular-course-entry"
+			},
+			"userContext": {
+				"id": "Toxj_agqQ0",
+				"correlationId": "ybyPOkIVMg",
+				"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+				"logEnvId": "development"
+			}
+		}
+	},
+	"error": {},
+	"stack": "Error: Attempted to get information from a node that was removed or forgotten.\n\nNode text: @NgModule({\n  imports: [ReactiveFormsModule],\n  declarations: [UserFormComponent],\n  providers: [],\n...\n    at get compilerNode [as compilerNode] (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\node_modules\\ts-morph\\dist\\ts-morph.js:2969:19)\n    at ClassDeclaration.getNameNode (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\node_modules\\ts-morph\\dist\\ts-morph.js:9444:63)\n    at ClassDeclaration.getName (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\node_modules\\ts-morph\\dist\\ts-morph.js:9451:37)\n    at importComponentCommandHandler (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:3683:127)\n    at async dispatchCommand (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:8488:26)\n    at async callCommandCli (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:8532:20)\n    at async callHandler (C:\\Users\\Ezyki\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:16678:27)",
+	"level": "error",
+	"message": "[API]: Error Attempted to get information from a node that was removed or forgotten.\n\nNode text: @NgModule({\n  imports: [ReactiveFormsModule],\n  declarations: [UserFormComponent],\n  providers: [],\n..."
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "jHeazWt7ko",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "UserFormComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_COMPONENT",
+				"label": "Display Component",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "UserFormComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_COMPONENT",
+				"label": "Display Component",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for angular-component/properties/list: {
+	"action": "angular-component/properties/list",
+	"params": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "jHeazWt7ko",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/properties/list"
+}
+[info] [API] Response ok: angular-component/properties/list: {
+	"result": [
+		{
+			"label": "userForm",
+			"templateType": "forms",
+			"typeProperties": []
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: angular-component/properties/list"
+}
+[info] [CLI] Calling Query angular-component/properties/list: {
+	"funcParams": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query angular-component/properties/list"
+}
+[info] [CLI] Called Query angular-component/properties/list: {
+	"result": [
+		{
+			"label": "userForm",
+			"templateType": "forms",
+			"typeProperties": []
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query angular-component/properties/list"
+}
+[info] [API] Request for angular-component/templates/get: {
+	"action": "angular-component/templates/get",
+	"params": {
+		"name": "forms"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "jHeazWt7ko",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/templates/get"
+}
+[info] [API] Response ok: angular-component/templates/get: {
+	"result": [
+		{
+			"label": "form",
+			"contextVariables": []
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: angular-component/templates/get"
+}
+[info] [CLI] Calling Query angular-component/templates/get: {
+	"funcParams": {
+		"name": "forms"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query angular-component/templates/get"
+}
+[info] [CLI] Called Query angular-component/templates/get: {
+	"result": [
+		{
+			"label": "form",
+			"contextVariables": []
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query angular-component/templates/get"
+}
+[info] [API] Request for angular-component/templates/add-form: {
+	"action": "angular-component/templates/add-form",
+	"params": {
+		"componentHtmlFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0,
+		"propertyName": "userForm",
+		"formTemplate": "form"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "jHeazWt7ko",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/templates/add-form"
+}
+[info] [CLI] Calling Command angular-component/templates/add-form: {
+	"funcParams": {
+		"componentHtmlFilePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"position": 0,
+		"propertyName": "userForm",
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command angular-component/templates/add-form"
+}
+[info] [CommandBus]: Dispatching command AddFormToTemplateCommand: {
+	"commandName": "AddFormToTemplateCommand",
+	"payload": {
+		"workspaceRoot": "F:/lowgular-course-entry",
+		"componentTs": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"componentHtml": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"className": "UserFormComponent",
+		"propertyName": "userForm",
+		"position": 0,
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command AddFormToTemplateCommand"
+}
+[info] [EventBus]: Broadcasting event TemplateAddedEvent: {
+	"type": "TemplateAddedEvent",
+	"payload": {
+		"componentTs": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"tokens": {}
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event TemplateAddedEvent"
+}
+[info] [EventBus]: Broadcasted TemplateAddedEvent: {
+	"event": {
+		"componentTs": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"tokens": {}
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted TemplateAddedEvent"
+}
+[info] [CommandBus]: Handled  AddFormToTemplateCommand: {
+	"commandName": "AddFormToTemplateCommand",
+	"payload": {
+		"workspaceRoot": "F:/lowgular-course-entry",
+		"componentTs": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.ts",
+		"componentHtml": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html",
+		"className": "UserFormComponent",
+		"propertyName": "userForm",
+		"position": 0,
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  AddFormToTemplateCommand"
+}
+[info] [CLI] Called Command angular-component/templates/add-form: {
+	"message": "[CLI] Called Command angular-component/templates/add-form",
+	"level": "info"
+}
+[info] [API] Response ok: angular-component/templates/add-form: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/ui/user-form/user-form.component.html"
+	},
+	"level": "info",
+	"message": "[API] Response ok: angular-component/templates/add-form"
+}
+[info] [CommandBus]: Dispatching command ImportTemplateModulesCommand: {
+	"commandName": "ImportTemplateModulesCommand",
+	"payload": {
+		"componentModuleFilePaths": [
+			"F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+		],
+		"addedTokens": {}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command ImportTemplateModulesCommand"
+}
+[info] [CommandBus]: Handled  ImportTemplateModulesCommand: {
+	"commandName": "ImportTemplateModulesCommand",
+	"payload": {
+		"componentModuleFilePaths": [
+			"F:/lowgular-course-entry/src/app/ui/user-form/user-form.component-module.ts"
+		],
+		"addedTokens": {}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  ImportTemplateModulesCommand"
+}
