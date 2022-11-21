@@ -8,7 +8,10 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeFormComponent {
-  readonly employeeForm: FormGroup = new FormGroup({ name: new FormControl(null, [Validators.required]), age: new FormControl(null, [Validators.min(18)])
+  readonly employeeForm: FormGroup = new FormGroup({
+    name: new FormControl(null, [Validators.required]),
+    age: new FormControl(null, [Validators.min(18), Validators.required]),
+    salary: new FormControl(null, [Validators.required])
   });
 
   //onEmployeeFormSubmitted(employeeForm: FormGroup): void {
