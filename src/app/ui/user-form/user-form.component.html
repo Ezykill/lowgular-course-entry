@@ -10,15 +10,10 @@
     <h1 class="display-4">Lesson 3 excercise 2</h1>
   </div>
 
-<form [formGroup]="userForm">
+<form [formGroup]="userForm" (ngSubmit)="onButtonClicked(userForm.value)">
   <div class="form-group">
     <label for="exampleInputEmail1">Email</label>
   <input class="form-control" type="text" formControlName="email" placeholder="Email">
-  </div>
-
-  <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input class="form-control" type="text" formControlName="name" placeholder="Name">
   </div>
 
   <div class="form-group">
