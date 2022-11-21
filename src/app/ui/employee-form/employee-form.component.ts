@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {CreateEmployeeModel} from "../../model/create-employee.model";
 
 @Component({
   selector: 'app-employee-form',
@@ -14,6 +15,7 @@ export class EmployeeFormComponent {
     salary: new FormControl(null, [Validators.required])
   });
 
-  //onEmployeeFormSubmitted(employeeForm: FormGroup): void {
-  //}
+  onFormSubmitted(form: CreateEmployeeModel): void
+  {
+  }
 }

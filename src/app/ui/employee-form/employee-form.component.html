@@ -8,7 +8,7 @@
     <h1 class="display-4">Form</h1>
   </div>
 
-<form [formGroup]="employeeForm">
+<form [formGroup]="employeeForm" (ngSubmit)="onFormSubmitted(employeeForm.value)">
   <div class="form-group">
     <label for="exampleInputEmail1">Name</label>
   <input class="form-control" type="text" formControlName="name" placeholder="Name">
