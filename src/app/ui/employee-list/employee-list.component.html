@@ -10,7 +10,7 @@
 </div>
 
 <ul  class="list-group" *ngIf="data$ | async as data; else empty">
-  <li class="list-group-item" *ngFor="let employee of data">{{ employee.personalNumber }}:  {{ employee.name }}  <button (click)="delete(employee.personalNumber)" type="button" class="btn btn-dark">Remove me</button></li>
+  <li class="list-group-item" *ngFor="let employee of data">{{ employee.personalNumber }}:  {{ employee.name }}  <button (click)="delete(employee.personalNumber)" type="button" class="btn btn-secondary btn-sm">Remove me</button></li>
 </ul>
 
 <ng-template #empty> There is no data </ng-template>
