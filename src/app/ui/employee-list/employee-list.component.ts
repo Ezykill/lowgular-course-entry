@@ -19,4 +19,9 @@ export class EmployeeListComponent {
   constructor(private _employeeService: EmployeeService) {
   }
 
+  delete(id: string)
+  {
+    this._employeeService.delete(id).subscribe();
+  }
+
 }
