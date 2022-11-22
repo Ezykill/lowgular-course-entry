@@ -21,6 +21,8 @@ export class EmployeeService {
             name: employeeResponse.employee_name,
             personalNumber: employeeResponse.id,
             img: employeeResponse.profile_image,
+            salary: employeeResponse.employee_salary,
+            age: employeeResponse.employee_age,
             surname: '',
             mail: ''
           }
