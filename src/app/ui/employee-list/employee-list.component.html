@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+<div class="jumbotron">
+  <h1 class="display-2">My first app!</h1>
+  <h2 class="display-4">{{ title }}</h2>
+</div>
+
+  <table class="table table-striped" *ngIf="data$ | async as data; else empty">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Remove me</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor="let employee of data">
+      <th scope="row">{{ employee.personalNumber }}</th>
+      <td>{{ employee.name }} </td>
+      <td><button (click)="delete(employee.personalNumber)" type="button" class="btn btn-secondary btn-sm">Remove me</button></td>
+    </tr>
+  </table>
+
+
+<ng-template #empty> There is no data </ng-template>
+
+</div>
+</body>
