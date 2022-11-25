@@ -16,13 +16,15 @@
 
 <body>
 <div class="container">
+
   <div class="jumbotron">
     <h1 class="display-1">Employee Details</h1>
   </div>
 
-
-  {{ (params$ | async)?.id }}
-  {{ (params$ | async)?.name }}
+  <ul class="list-group">
+  <li class="list-group-item">Id: {{ (details$| async)?.personalNumber }} </li>
+  <li class="list-group-item">Name: {{ (details$| async)?.name }}</li>
+  </ul>
 
 
 </div>
