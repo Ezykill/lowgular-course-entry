@@ -6,7 +6,6 @@ import { PersonModel } from '../model/person.model';
 import { ApiResponse } from './api.response';
 import { EmployeeResponse } from './employee.response';
 import { CreateEmployeeModel } from '../model/create-employee.model';
-import { EmployeeModel } from "../model/employee.model";
 
 @Injectable()
 export class EmployeeService {

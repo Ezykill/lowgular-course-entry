@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 import { ActivatedRoute } from '@angular/router';
 import {Observable, switchMap} from 'rxjs';
 import { EmployeeDetailsParamsModel } from '../../model/employee-details-params.model';
-import { EmployeeModel } from '../../model/employee.model';
 import { EmployeeService } from '../../services/employee.service';
 import {map} from "rxjs/operators";
 import {PersonModel} from "../../model/person.model";
