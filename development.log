@@ -16112,3 +16112,254 @@ Node text: @NgModule({
 	"level": "info",
 	"message": "[API] Response ok: routing/add"
 }
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"position": 945
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "n5aYajeR0U",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"position": 945
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeFormComponent",
+			"parentMethod": "onFormSubmitted"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "onFormSubmitted()",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Statement",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP_TO",
+								"label": "Map To",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Statement Side Effect",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeFormComponent",
+			"parentMethod": "onFormSubmitted"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "onFormSubmitted()",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Statement",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP_TO",
+								"label": "Map To",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Statement Side Effect",
+								"callPath": [
+									"onFormSubmitted"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for routing/add: {
+	"action": "routing/add",
+	"params": {
+		"routeName": "create-employee",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "n5aYajeR0U",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for routing/add"
+}
+[info] [CLI] Calling Command routing/add: {
+	"funcParams": {
+		"routeName": "create-employee",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command routing/add"
+}
+[info] [CommandBus]: Dispatching command AddRouteCommand: {
+	"commandName": "AddRouteCommand",
+	"payload": {
+		"routingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+		"routeName": "create-employee",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"relatedModulePaths": [
+			"F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component-module.ts",
+			"F:/lowgular-course-entry/src/app/services/employee.service-module.ts"
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command AddRouteCommand"
+}
+[info] [CommandBus]: Handled  AddRouteCommand: {
+	"commandName": "AddRouteCommand",
+	"payload": {
+		"routingFilePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts",
+		"routeName": "create-employee",
+		"componentFile": "F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"relatedModulePaths": [
+			"F:/lowgular-course-entry/src/app/ui/employee-form/employee-form.component-module.ts",
+			"F:/lowgular-course-entry/src/app/services/employee.service-module.ts"
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  AddRouteCommand"
+}
+[info] [CLI] Called Command routing/add: {
+	"message": "[CLI] Called Command routing/add",
+	"level": "info"
+}
+[info] [API] Response ok: routing/add: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/app-routing.module.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: routing/add"
+}
