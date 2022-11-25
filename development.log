@@ -19857,3 +19857,1849 @@ Node text: @NgModule({
 	"level": "info",
 	"message": "[API] Response ok: rxjs/methods/statement/create"
 }
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 637
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "TgWwOB5Czf",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 637
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for injectable/list: {
+	"action": "injectable/list",
+	"params": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "TgWwOB5Czf",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for injectable/list"
+}
+[info] [CLI] Calling Query injectable/list: {
+	"funcParams": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query injectable/list"
+}
+[info] [CLI] Called Query injectable/list: {
+	"result": [
+		{
+			"file": "F:/lowgular-course-entry/src/app/services/employee.service.ts",
+			"name": "EmployeeService",
+			"type": "ANGULAR_SERVICE",
+			"dataType": "Internal"
+		},
+		{
+			"id": "httpClient",
+			"dataType": "External",
+			"name": "HttpClient",
+			"relatedTypes": {}
+		},
+		{
+			"id": "activatedRoute",
+			"dataType": "External",
+			"name": "ActivatedRoute",
+			"relatedTypes": {}
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query injectable/list"
+}
+[info] [API] Response ok: injectable/list: {
+	"result": [
+		{
+			"file": "F:/lowgular-course-entry/src/app/services/employee.service.ts",
+			"name": "EmployeeService",
+			"type": "ANGULAR_SERVICE",
+			"dataType": "Internal"
+		},
+		{
+			"id": "httpClient",
+			"dataType": "External",
+			"name": "HttpClient",
+			"relatedTypes": {}
+		},
+		{
+			"id": "activatedRoute",
+			"dataType": "External",
+			"name": "ActivatedRoute",
+			"relatedTypes": {}
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: injectable/list"
+}
+[info] [API] Request for injectable/inject: {
+	"action": "injectable/inject",
+	"params": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"injectingPath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "TgWwOB5Czf",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for injectable/inject"
+}
+[info] [CLI] Calling Command injectable/inject: {
+	"funcParams": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"injectingPath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command injectable/inject"
+}
+[info] [CommandBus]: Dispatching command INJECT_SERVICE_DEPENDENCY: {
+	"commandName": "INJECT_SERVICE_DEPENDENCY",
+	"payload": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"injectingFilePath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command INJECT_SERVICE_DEPENDENCY"
+}
+[info] [CommandBus]: Handled  INJECT_SERVICE_DEPENDENCY: {
+	"commandName": "INJECT_SERVICE_DEPENDENCY",
+	"payload": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"injectingFilePath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  INJECT_SERVICE_DEPENDENCY"
+}
+[info] [CLI] Called Command injectable/inject: {
+	"message": "[CLI] Called Command injectable/inject",
+	"level": "info"
+}
+[info] [API] Response ok: injectable/inject: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: injectable/inject"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 804
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "oTLeaqyqyh",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 804
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for rxjs/properties/data/flow: {
+	"action": "rxjs/properties/data/flow",
+	"params": {
+		"actionId": "RXJS_PROPERTY_CREATE",
+		"label": "Create Data Property",
+		"callPath": []
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "oTLeaqyqyh",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/data/flow"
+}
+[info] [CLI] Calling Query rxjs/properties/data/flow: {
+	"funcParams": {
+		"actionId": "RXJS_PROPERTY_CREATE",
+		"label": "Create Data Property",
+		"callPath": []
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query rxjs/properties/data/flow"
+}
+[info] [CLI] Called Query rxjs/properties/data/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "entity",
+				"title": "Which dependency to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "EmployeeDetailsComponent",
+						"path": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+					},
+					{
+						"name": "EmployeeService",
+						"path": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+					},
+					{
+						"name": "HttpClient",
+						"path": "F:/lowgular-course-entry/node_modules/@angular/common/http/http.d.ts"
+					},
+					{
+						"name": "ActivatedRoute",
+						"path": "F:/lowgular-course-entry/node_modules/@angular/router/router.d.ts"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "observable",
+				"title": "Which observable to use?",
+				"type": "multi-option",
+				"options": {
+					"EmployeeDetailsComponent": [
+						{
+							"name": "params$",
+							"callPath": [
+								"params$"
+							]
+						}
+					],
+					"EmployeeService": [
+						{
+							"name": "getAll()",
+							"callPath": [
+								"getAll"
+							]
+						},
+						{
+							"name": "create()",
+							"callPath": [
+								"create"
+							]
+						},
+						{
+							"name": "delete()",
+							"callPath": [
+								"delete"
+							]
+						},
+						{
+							"name": "getOne()",
+							"callPath": [
+								"getOne"
+							]
+						}
+					],
+					"HttpClient": [
+						{
+							"name": "request()",
+							"callPath": [
+								"request"
+							]
+						},
+						{
+							"name": "delete()",
+							"callPath": [
+								"delete"
+							]
+						},
+						{
+							"name": "get()",
+							"callPath": [
+								"get"
+							]
+						},
+						{
+							"name": "head()",
+							"callPath": [
+								"head"
+							]
+						},
+						{
+							"name": "jsonp()",
+							"callPath": [
+								"jsonp"
+							]
+						},
+						{
+							"name": "options()",
+							"callPath": [
+								"options"
+							]
+						},
+						{
+							"name": "patch()",
+							"callPath": [
+								"patch"
+							]
+						},
+						{
+							"name": "post()",
+							"callPath": [
+								"post"
+							]
+						},
+						{
+							"name": "put()",
+							"callPath": [
+								"put"
+							]
+						}
+					],
+					"ActivatedRoute": [
+						{
+							"name": "url",
+							"callPath": [
+								"url"
+							]
+						},
+						{
+							"name": "params",
+							"callPath": [
+								"params"
+							]
+						},
+						{
+							"name": "queryParams",
+							"callPath": [
+								"queryParams"
+							]
+						},
+						{
+							"name": "fragment",
+							"callPath": [
+								"fragment"
+							]
+						},
+						{
+							"name": "data",
+							"callPath": [
+								"data"
+							]
+						}
+					]
+				},
+				"extraOptions": [],
+				"param": "entity.name",
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/data/create",
+				"payload": {
+					"propertyName": "name.value",
+					"dependencyCallPath": "observable.callPath",
+					"dependencyName": "entity.name",
+					"dependencyPath": "entity.path"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query rxjs/properties/data/flow"
+}
+[info] [API] Response ok: rxjs/properties/data/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "entity",
+				"title": "Which dependency to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "EmployeeDetailsComponent",
+						"path": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+					},
+					{
+						"name": "EmployeeService",
+						"path": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+					},
+					{
+						"name": "HttpClient",
+						"path": "F:/lowgular-course-entry/node_modules/@angular/common/http/http.d.ts"
+					},
+					{
+						"name": "ActivatedRoute",
+						"path": "F:/lowgular-course-entry/node_modules/@angular/router/router.d.ts"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "observable",
+				"title": "Which observable to use?",
+				"type": "multi-option",
+				"options": {
+					"EmployeeDetailsComponent": [
+						{
+							"name": "params$",
+							"callPath": [
+								"params$"
+							]
+						}
+					],
+					"EmployeeService": [
+						{
+							"name": "getAll()",
+							"callPath": [
+								"getAll"
+							]
+						},
+						{
+							"name": "create()",
+							"callPath": [
+								"create"
+							]
+						},
+						{
+							"name": "delete()",
+							"callPath": [
+								"delete"
+							]
+						},
+						{
+							"name": "getOne()",
+							"callPath": [
+								"getOne"
+							]
+						}
+					],
+					"HttpClient": [
+						{
+							"name": "request()",
+							"callPath": [
+								"request"
+							]
+						},
+						{
+							"name": "delete()",
+							"callPath": [
+								"delete"
+							]
+						},
+						{
+							"name": "get()",
+							"callPath": [
+								"get"
+							]
+						},
+						{
+							"name": "head()",
+							"callPath": [
+								"head"
+							]
+						},
+						{
+							"name": "jsonp()",
+							"callPath": [
+								"jsonp"
+							]
+						},
+						{
+							"name": "options()",
+							"callPath": [
+								"options"
+							]
+						},
+						{
+							"name": "patch()",
+							"callPath": [
+								"patch"
+							]
+						},
+						{
+							"name": "post()",
+							"callPath": [
+								"post"
+							]
+						},
+						{
+							"name": "put()",
+							"callPath": [
+								"put"
+							]
+						}
+					],
+					"ActivatedRoute": [
+						{
+							"name": "url",
+							"callPath": [
+								"url"
+							]
+						},
+						{
+							"name": "params",
+							"callPath": [
+								"params"
+							]
+						},
+						{
+							"name": "queryParams",
+							"callPath": [
+								"queryParams"
+							]
+						},
+						{
+							"name": "fragment",
+							"callPath": [
+								"fragment"
+							]
+						},
+						{
+							"name": "data",
+							"callPath": [
+								"data"
+							]
+						}
+					]
+				},
+				"extraOptions": [],
+				"param": "entity.name",
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/data/create",
+				"payload": {
+					"propertyName": "name.value",
+					"dependencyCallPath": "observable.callPath",
+					"dependencyName": "entity.name",
+					"dependencyPath": "entity.path"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/data/flow"
+}
+[info] [API] Request for rxjs/properties/data/create: {
+	"action": "rxjs/properties/data/create",
+	"params": {
+		"propertyName": "details",
+		"dependencyCallPath": [
+			"getOne"
+		],
+		"dependencyName": "EmployeeService",
+		"dependencyPath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "oTLeaqyqyh",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/data/create"
+}
+[info] [API] Response ok: rxjs/properties/data/create: {
+	"result": {
+		"filePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/data/create"
+}
+[info] [CLI] Calling Command rxjs/properties/data/create: {
+	"funcParams": {
+		"propertyName": "details",
+		"dependencyCallPath": [
+			"getOne"
+		],
+		"dependencyName": "EmployeeService",
+		"dependencyPath": "F:/lowgular-course-entry/src/app/services/employee.service.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command rxjs/properties/data/create"
+}
+[info] [CommandBus]: Dispatching command CreateDataPropertyCommand: {
+	"commandName": "CreateDataPropertyCommand",
+	"payload": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"entityPropertyName": "details",
+		"dependencyFilePath": "F:/lowgular-course-entry/src/app/services/employee.service.ts",
+		"dependencyName": "EmployeeService",
+		"dependencyCallPath": [
+			"getOne"
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command CreateDataPropertyCommand"
+}
+[info] [CLI] Called Command rxjs/properties/data/create: {
+	"message": "[CLI] Called Command rxjs/properties/data/create",
+	"level": "info"
+}
+[info] [CommandBus]: Handled  CreateDataPropertyCommand: {
+	"commandName": "CreateDataPropertyCommand",
+	"payload": {
+		"entityFilePath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"entityPropertyName": "details",
+		"dependencyFilePath": "F:/lowgular-course-entry/src/app/services/employee.service.ts",
+		"dependencyName": "EmployeeService",
+		"dependencyCallPath": [
+			"getOne"
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  CreateDataPropertyCommand"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 761
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "S56mU5_QQk",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 761
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Request for rxjs/properties/subject/flow: {
+	"action": "rxjs/properties/subject/flow",
+	"params": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "S56mU5_QQk",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/subject/flow"
+}
+[info] [CLI] Calling Query rxjs/properties/subject/flow: {
+	"funcParams": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query rxjs/properties/subject/flow"
+}
+[info] [CLI] Called Query rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "CreateEmployeeModel"
+					},
+					{
+						"name": "EmployeeDetailsParamsModel"
+					},
+					{
+						"name": "EmployeeModel"
+					},
+					{
+						"name": "PersonModel"
+					},
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query rxjs/properties/subject/flow"
+}
+[info] [API] Response ok: rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "CreateEmployeeModel"
+					},
+					{
+						"name": "EmployeeDetailsParamsModel"
+					},
+					{
+						"name": "EmployeeModel"
+					},
+					{
+						"name": "PersonModel"
+					},
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/subject/flow"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 761
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ZNnfLp5aOk",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 761
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [API] Request for rxjs/properties/subject/flow: {
+	"action": "rxjs/properties/subject/flow",
+	"params": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "ZNnfLp5aOk",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/subject/flow"
+}
+[info] [CLI] Calling Query rxjs/properties/subject/flow: {
+	"funcParams": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query rxjs/properties/subject/flow"
+}
+[info] [CLI] Called Query rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "CreateEmployeeModel"
+					},
+					{
+						"name": "EmployeeDetailsParamsModel"
+					},
+					{
+						"name": "EmployeeModel"
+					},
+					{
+						"name": "PersonModel"
+					},
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query rxjs/properties/subject/flow"
+}
+[info] [API] Response ok: rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "CreateEmployeeModel"
+					},
+					{
+						"name": "EmployeeDetailsParamsModel"
+					},
+					{
+						"name": "EmployeeModel"
+					},
+					{
+						"name": "PersonModel"
+					},
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/subject/flow"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 834
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "F:/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "Toxj_agqQ0",
+			"correlationId": "lwNOm_L7kC",
+			"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "F:/lowgular-course-entry/src/app/ui/employee-details/employee-details.component.ts",
+		"position": 834
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent",
+			"parentProperty": "details$"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"label": "details$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"details$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"details$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "EmployeeDetailsComponent",
+			"parentProperty": "details$"
+		},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"label": "params$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"params$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"params$"
+								]
+							}
+						]
+					},
+					{
+						"label": "details$",
+						"children": [
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_MAP",
+								"label": "Map Property",
+								"callPath": [
+									"details$"
+								]
+							},
+							{
+								"actionId": "RXJS_CALL_EXPRESSIONS_TAP",
+								"label": "Property Side Effect",
+								"callPath": [
+									"details$"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}

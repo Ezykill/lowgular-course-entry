@@ -6,7 +6,7 @@ import { PersonModel } from '../model/person.model';
 import { ApiResponse } from './api.response';
 import { EmployeeResponse } from './employee.response';
 import { CreateEmployeeModel } from '../model/create-employee.model';
-import {EmployeeModel} from "../model/employee.model";
+import { EmployeeModel } from "../model/employee.model";
 
 @Injectable()
 export class EmployeeService {
@@ -40,13 +40,15 @@ export class EmployeeService {
       ;
   }
 
-  getOne(id: string): Observable<EmployeeModel> {
-    return this._httpClient.get<ApiResponse<EmployeeResponse>>('https://dummy.restapiexample.com/api/v1/employees/'+id).pipe(
-      map((response: ApiResponse<EmployeeResponse>): EmployeeModel => ({
-        id: response.data.id,
-        image: response.data.profile_image,
-        email: '',
-        name: response.data.employee_name
+  getOne(id: string): Observable<PersonModel> {
+    return this._httpClient.get<ApiResponse<EmployeeResponse>>('https://dummy.restapiexample.com/api/v1/employee/' +id).pipe(
+      map((response: ApiResponse<EmployeeResponse>): PersonModel => ({
+        personalNumber: response.data.id,
+        img: response.data.profile_image,
+        mail: '',
+        name: response.data.employee_name,
+        salary: response.data.employee_salary,
+        age: response.data.employee_age
       }))
     );
 
